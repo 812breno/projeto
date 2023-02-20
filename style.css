@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Condensed&family=Russo+One&display=swap');
+@font-face {
+    font-family: 'Kimberley';
+    src: url(./fonts/kimberley\ bl.ttf);
+}
+
+:root{
+    --cor-um: #262626;
+    --cor-dois: #ffffff;
+    --cor-tres: #909090;
+    --cor-quatro: #000000b2;
+    --cor-cinco: #2a2a2a;
+    --cor-seis: #737373;
+    --cor-sete: #6c6a6a;
+    --cor-oito: #3a3a3a;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: flex;  
+    flex-direction: column;
+    background-color: #2a2a2a;
+    background-image: url(./assets/nss\ wallpaper\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #000000b2;
+    padding: 2%;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.header-menu{
+    padding-left: 5%;
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-links{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 450;
+    color: rgb(255, 255, 255);
+    text-decoration: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-conteudo{
+    margin: 5%;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000bc;
+    border-radius: 5px;
+    padding: 30px 0px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    width: 40%;
+    gap: 10px;
+}
+.container-titulo{
+    font-family: 'Kimberley';
+    color: rgb(255, 255, 255);
+    font-size: 2.18rem;
+}
+.container-texto{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.56rem;
+    color: rgb(255, 255, 255);
+    gap: 40px;
+}
+.container-conteudo-site{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 4.375rem;
+}
+.container-conteudo-site-botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    text-decoration: 0;
+    border: solid #6c6a6a 2px;
+    border-radius: 2px;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    color: #6c6a6a;
+    transition-duration: 0.4s;
+}
+.container-conteudo-site-botoes:hover{
+    transform: scale(1.04);
+    color: white;
+    border-color: white;
+    background-color: #3a3a3a;
+}
+.footer{
+    margin-top: auto;
+    padding: 10px;
+    background-color: #2a2a2a;
+    height: 20px ;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.18rem;
+    color: #646464;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .header{
+        padding-left: 0%;
+        justify-content: center;
+    }
+    
+    
+    .container{
+        display: flex;
+        align-items: center;
+    }
+
+    .container-conteudo{
+        justify-content: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 36.5rem;
+    }
+
+    .container-conteudo-site-botoes{
+        border: solid #ffffff 2px;
+        color: #ffffff;
+    }
+
+    .footer{
+        margin-top: 68%;
+    }
+}
+
+@media (max-width: 950px) {
+    
+    .header{
+        padding: 3% 0% 3% 0%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .header-img{
+        margin-left: 3.5%;
+    }
+
+    .header-menu-links{
+        font-size: 1.4rem;
+    }
+
+    .header-img{
+        width: 20rem;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    
+    .container-conteudo{
+        height: 100%;
+        width: 70%;
+    }
+    
+    .container-texto{
+        font-size: 1.8rem;
+    }
+
+    .container-conteudo-site-botoes{
+        font-size: 1.5rem;
+    }
+
+    .footer{
+        margin-top: 76%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .container-conteudo-site-botoes{
+        width: 20%;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .header{
+        padding-left: 0%;
+        justify-content: center;
+    }
+    
+    .container-conteudo{
+        justify-content: center;
+    }
+
+    .container-conteudo-site-botoes{
+        display: flex;
+        width: 30%;
+}
+
+.footer{
+    margin-top: 86%;
+}
+
+}
